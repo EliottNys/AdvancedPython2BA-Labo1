@@ -2,6 +2,8 @@
 # Author: Sébastien Combéfis
 # Version: February 8, 2018
 
+# teste les fonctions fact(), roots() & integrate() du fichier utils.py
+
 import unittest
 import utils
 
