@@ -18,8 +18,9 @@ class TestUtils(unittest.TestCase):
         self.assertEqual(utils.roots(2,-11,5), (5.0, 0.5))
     
     def test_integrate(self):
-        # À compléter...
-        pass
+        self.assertEqual(utils.integrate("5",4,6), 10)
+        self.assertEqual(utils.integrate("x",3,9), 36)
+        self.assertEqual(utils.integrate("5*x**2+3*x-9",-3,12), 5992/2)
 
 if __name__ == '__main__':
     suite = unittest.TestLoader().loadTestsFromTestCase(TestUtils)
