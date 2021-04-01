@@ -11,11 +11,11 @@ class TestUtils(unittest.TestCase):
         self.assertEqual(utils.fact(7), 5040)
         self.assertEqual(utils.fact(0), 1)
         self.assertEqual(utils.fact(-4), ValueError)
-        pass
     
     def test_roots(self):
-        # À compléter...
-        pass
+        self.assertEqual(utils.roots(1,-3,4), ())
+        self.assertEqual(utils.roots(-4,12,-9), (3/2))
+        self.assertEqual(utils.roots(2,-11,5), (5.0, 0.5))
     
     def test_integrate(self):
         # À compléter...
